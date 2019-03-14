@@ -1,0 +1,1 @@
+NGINX -s stop

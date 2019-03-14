@@ -1,0 +1,12 @@
+2019/03/13 12:20:12 [warn] 5944#7340: "user" is not supported, ignored in C:\Users\Elz\Desktop\nginx/conf/nginx.conf:1
+2019/03/13 12:20:12 [notice] 5136#5064: sockinit() attempting to access sockapi
+2019/03/13 12:20:12 [notice] 5136#5064: Access to sockapi succeded!
+2019/03/13 12:20:12 [notice] 5136#5064: using sockapi from "4;"
+2019/03/13 12:20:12 [warn] 5136#5064: "user" is not supported, ignored in C:\Users\Elz\Desktop\nginx/conf/nginx.conf:1
+2019/03/13 12:21:45 [warn] 8720#3740: "user" is not supported, ignored in C:\Users\Elz\Desktop\nginx/conf/nginx.conf:1
+2019/03/13 12:21:45 [notice] 8720#3740: signal process started (stop)
+2019/03/13 12:54:20 [warn] 4468#1564: "user" is not supported, ignored in C:\Users\Elz\Desktop\nginx/conf/nginx.conf:1
+2019/03/13 12:54:20 [notice] 2144#1856: sockinit() attempting to access sockapi
+2019/03/13 12:54:20 [notice] 2144#1856: Access to sockapi succeded!
+2019/03/13 12:54:20 [notice] 2144#1856: using sockapi from "4;"
+2019/03/13 12:54:20 [warn] 2144#1856: "user" is not supported, ignored in C:\Users\Elz\Desktop\nginx/conf/nginx.conf:1
