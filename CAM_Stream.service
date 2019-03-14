@@ -1,0 +1,16 @@
+[Unit]
+Description=CAM-Stream
+After=network.target
+
+[Service]
+Type=simple
+User=pi
+PermissionsStartOnly=true
+
+Restart=always
+RestartSec=5
+
+ExecStart=/bin/bash /home/pi/Desktop/stream.sh
+
+[Install]
+WantedBy=multi-user.target
