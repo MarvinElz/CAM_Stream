@@ -9,8 +9,8 @@
 # Server-IP: 192.168.20.108
 
 
-# HD-Ready
-raspivid -o - -t 0 -vf -hf -fps 30 -w 1920 -h 1080 -n | ffmpeg -re  -r 15 -ar 44100 -ac 2 -acodec pcm_s16le -f s16le  -ac 2 -i /dev/zero -f h264 -framerate 30  -i - -vcodec copy -acodec aac -ab 128k -b 5000k -strict experimental  -f flv rtmp://192.168.20.107/live/test
+# HD-Ready#                                                                                                                                                                                                      V -b 5000k             
+raspivid -o - -t 0 -vf -hf -fps 30 -w 1920 -h 1080 -b 7000000 -n | ffmpeg -re  -r 15 -ar 44100 -ac 2 -acodec pcm_s16le -f s16le  -ac 2 -i /dev/zero -f h264 -framerate 30  -i - -vcodec copy -acodec aac -ab 128k -strict experimental  -f flv rtmp://192.168.20.107/live/test
 
 # Full-HD
 # raspivid -o - -t 0 -vf -hf -fps 30 -w 1920 -h 1080 | ffmpeg -re  -r 15 -ar 44100 -ac 2 -acodec pcm_s16le -f s16le  -ac 2 -i /dev/zero -f h264 -framerate 30  -i - -vcodec copy -acodec aac -ab 128k -b 5000k -strict experimental  -f flv rtmp://192.168.178.26/live/test
