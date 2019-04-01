@@ -26,20 +26,12 @@ echo "Erstelle Sicherheitskopie: /usr/local/nginx/conf/nginx_save.conf"
 sudo cp /usr/local/nginx/conf/nginx.conf /usr/local/nginx/conf/nginx_save.conf
 
 echo "Schreibe Konfig-Datei"
-sudo rm /usr/local/nginx/conf/nginx.conf
-sudo echo "
-#user  nobody;
-worker_processes  1;
-
-events {
-    worker_connections  1024;
-}
-
-rtmp {
+#sudo rm /usr/local/nginx/conf/nginx.conf
+sudo echo "rtmp {
       server {
             listen 1935;
             chunk_size 4096;
-            allow publish 192.168.20.51;
+            #allow publish 192.168.20.51;
             deny publish all;
 
             allow play all;
@@ -52,5 +44,5 @@ rtmp {
 }" >> /usr/local/nginx/conf/nginx.conf
 
 echo "Neustart von NGINX"
-sudo /usr/local/nginx/sbin/nginx -s stop
-sudo /usr/local/nginx/sbin/nginx
+#sudo /usr/local/nginx/sbin/nginx -s stop
+#sudo /usr/local/nginx/sbin/nginx
