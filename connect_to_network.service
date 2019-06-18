@@ -1,0 +1,16 @@
+[Unit]
+Description=Connect_To_Network
+After=network.target
+
+[Service]
+Type=simple
+User=pi
+PermissionsStartOnly=true
+
+#Restart=always
+#RestartSec=5
+
+ExecStart =-/bin/bash /home/pi/CAM_Stream/connect_to_network.sh &
+
+[Install]
+WantedBy=multi-user.target

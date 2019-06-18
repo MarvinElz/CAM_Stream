@@ -10,7 +10,8 @@ PermissionsStartOnly=true
 Restart=always
 RestartSec=5
 
-ExecStart=/bin/bash /home/pi/Desktop/stream.sh
+#ExecStartPre =-/bin/bash /home/pi/CAM_Stream/connect_to_network.sh
+ExecStart    =/bin/bash /home/pi/CAM_Stream/stream.sh
 
 [Install]
 WantedBy=multi-user.target
